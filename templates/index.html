@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prometheus Node Exporter Management</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #0a0a0a;
+            color: #00ff00;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            border-bottom: 1px solid #00ff00;
+            padding-bottom: 10px;
+        }
+        .status {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .active { background-color: #006400; }
+        .inactive { background-color: #8b0000; }
+        .unknown { background-color: #808080; }
+        input[type="text"], button {
+            background-color: #1a1a1a;
+            border: 1px solid #00ff00;
+            color: #00ff00;
+            padding: 5px 10px;
+            margin: 5px 0;
+        }
+        button {
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #006400;
+        }
+        #messages {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #00ff00;
+        }
+        .node-exporter {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prometheus Node Exporter Management</h1>
+
+        <div id="node-exporters">
+            <h2>Node Exporters</h2>
+            <div id="node-exporter-list">
+                {% for node in node_exporters %}
+                <div class="node-exporter" id="node-{{ node.id }}">
+                    <p>{{ node.hostname }}:
+                        <span class="status {{ node.status.lower() }}">
+                            {{ node.status }}
+                        </span>
+                        <button onclick="checkNodeStatus({{ node.id }})">Check Status</button>
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+
+            <h2>Add Node Exporter</h2>
+            <form id="add-node-form">
+                <input type="text" id="hostname" name="hostname" placeholder="Enter hostname or IP" required>
+                <button type="submit">Add Node Exporter</button>
+            </form>
+        </div>
+
+        <div id="messages"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

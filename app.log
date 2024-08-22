@@ -1,0 +1,38 @@
+2024-08-22 16:02:25,825 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2024-08-22 16:02:25,825 [INFO] - [33mPress CTRL+C to quit[0m
+2024-08-22 16:02:25,844 [INFO] -  * Restarting with stat
+2024-08-22 16:02:27,361 [WARNING] -  * Debugger is active!
+2024-08-22 16:02:27,365 [INFO] -  * Debugger PIN: 363-234-164
+2024-08-22 16:02:34,096 [INFO] -  * Detected change in 'H:\\Eminds\\scripts\\sop\\app.py', reloading
+2024-08-22 16:02:34,218 [INFO] -  * Restarting with stat
+2024-08-22 16:02:37,809 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2024-08-22 16:02:37,810 [INFO] - [33mPress CTRL+C to quit[0m
+2024-08-22 16:03:01,956 [INFO] - 127.0.0.1 - - [22/Aug/2024 16:03:01] "GET / HTTP/1.1" 200 -
+2024-08-22 16:03:02,182 [INFO] - 127.0.0.1 - - [22/Aug/2024 16:03:02] "GET /static/script.js HTTP/1.1" 200 -
+2024-08-22 16:03:02,203 [INFO] - 127.0.0.1 - - [22/Aug/2024 16:03:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-08-22 16:04:05,634 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2024-08-22 16:04:05,634 [INFO] - [33mPress CTRL+C to quit[0m
+2024-08-22 16:04:18,004 [INFO] - 127.0.0.1 - - [22/Aug/2024 16:04:18] "GET / HTTP/1.1" 200 -
+2024-08-22 16:04:18,382 [INFO] - 127.0.0.1 - - [22/Aug/2024 16:04:18] "GET /static/script.js HTTP/1.1" 200 -
+2024-08-22 16:04:18,400 [INFO] - 127.0.0.1 - - [22/Aug/2024 16:04:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-08-22 16:04:22,105 [ERROR] - Failed to add Node Exporter: [Errno 2] No such file or directory: '/etc/prometheus/prometheus.yml'
+2024-08-22 16:04:22,105 [INFO] - 127.0.0.1 - - [22/Aug/2024 16:04:22] "[35m[1mPOST /add_node_exporter HTTP/1.1[0m" 500 -
+2024-08-22 16:09:24,734 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.110.124:5000
+2024-08-22 16:09:24,735 [INFO] - [33mPress CTRL+C to quit[0m
+2024-08-22 16:25:18,216 [INFO] - 172.24.96.1 - - [22/Aug/2024 16:25:18] "GET / HTTP/1.1" 200 -
+2024-08-22 16:25:18,336 [INFO] - 172.24.96.1 - - [22/Aug/2024 16:25:18] "GET /static/script.js HTTP/1.1" 200 -
+2024-08-22 16:25:18,490 [INFO] - 172.24.96.1 - - [22/Aug/2024 16:25:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-08-22 16:25:20,894 [ERROR] - Failed to add Node Exporter: [Errno 2] No such file or directory: '/etc/prometheus/prometheus.yml'
+2024-08-22 16:25:20,894 [INFO] - 172.24.96.1 - - [22/Aug/2024 16:25:20] "[35m[1mPOST /add_node_exporter HTTP/1.1[0m" 500 -
