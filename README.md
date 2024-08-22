@@ -28,7 +28,7 @@ This application provides a web interface to easily add Node Exporter instances 
 
 1. Start the application:
    ```
-   python app.py  |  sudo python app.py   | sudo  python3 app.py
+   sudo python app.py  |  sudo python app.py   | sudo  python3 app.py
    ```
 
 2. Open your web browser and navigate to `http://your_server_ip:5000`
